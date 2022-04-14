@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+    margin:0px; padding:0px;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+}
+.left {
+    flex: 50%;
+    background-color: aqua;
+    padding-left: 50px;
+    padding-top: 50px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+
+
+
+}
+.right {
+    flex: 50%;
+    background-color: rebeccapurple;
+    padding-left: 50px;
+    padding-top: 50px;
+    animation: myanimation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    
+
+}
+@keyframes myanimation {
+    0% {background-color: yellow;}
+    25% {background-color: darkgrey;}
+    50% {background-color: lightcoral;}
+    75% {background-color: blue;}
+    100% {background-color: purple;}
+  }
+  .label {
+      padding-right: 40px;
+  }
+  .label1 {
+      padding-right: 17px;
+  }
+  form div {
+    margin-bottom: 10px;
+   
+}
+form div label {
+    color: whitesmoke;
+}
+.when:hover {
+
+background-color: blue;
+transform: scaleY(20deg);
+position: relative;
+
+
+}
+@media only screen and (max-width: 600px) 
+{
+    .main{
+        flex-direction: column;
+    
+    } 
+    .left {
+        padding-top: 100px;
+        background-color:black;
+        color: white;
+        margin-top:80px;
+    }
+    
+}
